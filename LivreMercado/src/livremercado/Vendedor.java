@@ -13,7 +13,7 @@ class Vendedor extends Pessoa {
     }
     
     public void adicioneProdutoAoEstoque (Produto produto, int quantidade) {
-        //TODO
+        estoque.adicioneItem(produto, quantidade);
     }
     
     public Estoque getEstoque() {
