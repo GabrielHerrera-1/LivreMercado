@@ -91,18 +91,16 @@ class Categoria {
 //        }
 
         if (permanente) {
-            // transferir os produtos da subcategoria removida para a categoria pai (this)
-            for (Produto produto : subcategoria.getProdutos()) {
-                this.adicioneProduto(produto);
+            for (Produto produto : subcategoria.produtos) {
+                produtos.add(produto);
+                produto.setCategoria(this);
             }
-
-            // transferir as subcategorias da subcategoria removida para a categoria pai (this)
-            for (Categoria subSubCategoria : subcategoria.getSubcategorias()) {
-                this.adicioneSubCategoria(subSubCategoria);
-            }
+            subcategoria.produtos.clear();
+            
+            subcategorias.addAll(subcategoria.subcategorias);
+            subcategoria.subcategorias.clear();
         }
-
-        // remove a subcategoria da lista de subcategorias (temporária ou permanentemente)
+        
         subcategorias.remove(subcategoria);
     }
 
