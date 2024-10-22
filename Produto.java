@@ -22,7 +22,7 @@ class Produto {
         this.marca = marca;
         this.preco = preco;
         this.categoria = categoria;
-        categoria.adicioneProduto(this); // REVER ISSO, não tem no outro
+        categoria.adicioneProduto(this); // REVER ISSO, não tem no outro, mas acredito estar certo
     }
 
     public Categoria getCategoria() {
