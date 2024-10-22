@@ -40,6 +40,10 @@ class ItemCompra {
     public int getQuantidade() {
         return quantidade;
     }
+
+    public void adicioneQuantidade(int quantidade) {
+        this.quantidade += quantidade;
+    }
     
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
