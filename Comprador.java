@@ -41,7 +41,7 @@ public class Comprador extends Pessoa {
                item.setQuantidade(0);
                } catch (IllegalArgumentException e){ }
            }
-           
+           //Rever esta parte
            for (ItemCompra item: carrinho.getItens()) {
                if (item.getQuantidade() ==0) carrinho.getItens().remove(item);
            }
