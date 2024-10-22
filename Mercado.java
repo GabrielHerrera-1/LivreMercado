@@ -47,7 +47,4 @@ public class Mercado {
     public ArrayList<Vendedor> getVendedores() {
         return vendedores;
     }
-    
-    
-    
 }
